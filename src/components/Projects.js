@@ -1,11 +1,20 @@
 const projects = [
   {
+    title: 'Bake My Cake 🎂',
+    desc: 'A React SPA for an online cake shop with category filtering, search, flip-card product gallery, shopping cart, checkout flow, and 54 products served via json-server REST API.',
+    tech: ['React', 'Axios', 'Framer Motion', 'json-server', 'CSS'],
+    color: '#DAA520',
+    icon: '🎂',
+    github: 'https://github.com/SRINIDHI-2524/bake-my-cake-phase-1',
+    live: '#',
+  },
+  {
     title: 'Zomato UI Clone',
     desc: 'A pixel-perfect responsive clone of Zomato\'s food delivery UI with smooth animations and interactive components.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     color: '#e23744',
     icon: '🍕',
-    github: 'https://github.com',
+    github: 'https://github.com/SRINIDHI-2524',
     live: '#',
   },
   {
@@ -14,7 +23,7 @@ const projects = [
     tech: ['React', 'Node.js', 'SQL'],
     color: '#2563eb',
     icon: '✅',
-    github: 'https://github.com',
+    github: 'https://github.com/SRINIDHI-2524',
     live: '#',
   },
   {
@@ -23,16 +32,16 @@ const projects = [
     tech: ['React', 'CSS', 'JavaScript'],
     color: '#9333ea',
     icon: '🚀',
-    github: 'https://github.com',
+    github: 'https://github.com/SRINIDHI-2524',
     live: '#',
   },
   {
-    title: 'E-Commerce Backend',
-    desc: 'RESTful API for an e-commerce platform with Spring Boot, JWT authentication, and MySQL database.',
-    tech: ['Java', 'Spring Boot', 'MySQL'],
+    title: 'ShopNow — eCommerce App',
+    desc: 'Amazon-like full-stack eCommerce platform with JWT auth, Stripe payments, product reviews, wishlist, admin dashboard, and Cloudinary image uploads.',
+    tech: ['Next.js', 'Node.js', 'MongoDB', 'Stripe'],
     color: '#10b981',
     icon: '🛒',
-    github: 'https://github.com',
+    github: 'https://github.com/SRINIDHI-2524',
     live: '#',
   },
   {
@@ -41,7 +50,7 @@ const projects = [
     tech: ['React', 'API', 'CSS'],
     color: '#f59e0b',
     icon: '🌤️',
-    github: 'https://github.com',
+    github: 'https://github.com/SRINIDHI-2524',
     live: '#',
   },
 ];

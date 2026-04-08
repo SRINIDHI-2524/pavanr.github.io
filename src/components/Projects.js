@@ -6,7 +6,7 @@ const projects = [
     color: '#DAA520',
     icon: '🎂',
     github: 'https://github.com/SRINIDHI-2524/bake-my-cake-phase-1',
-    live: '#',
+    live: 'https://bake-my-cake-srinidhi.netlify.app',
   },
   {
     title: 'Zomato UI Clone',
@@ -69,7 +69,11 @@ export default function Projects() {
               <span className="project-icon">{p.icon}</span>
               <div className="project-links">
                 <a href={p.github} target="_blank" rel="noreferrer">GitHub</a>
-                <a href={p.live} target="_blank" rel="noreferrer">Live ↗</a>
+                {p.live !== '#' ? (
+                  <a href={p.live} target="_blank" rel="noreferrer" className="live-link">Live ↗</a>
+                ) : (
+                  <span className="live-soon">Coming Soon</span>
+                )}
               </div>
             </div>
             <h3>{p.title}</h3>

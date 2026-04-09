@@ -1,5 +1,14 @@
 const projects = [
   {
+    title: 'FAST Food Delivery App 🍔',
+    desc: 'Swiggy/Zomato-like full-stack food delivery app — 500+ dishes, JWT auth, Stripe + UPI + COD payments, AI chatbot (GPT), real-time order tracking, coupon system, and admin dashboard with charts.',
+    tech: ['React', 'Spring Boot', 'MySQL', 'Stripe', 'Gen AI', 'Tailwind'],
+    color: '#fc8019',
+    icon: '🍔',
+    github: 'https://github.com/SRINIDHI-2524/FAST-Food-Delivery-App',
+    live: 'https://fast-food-delivery-srinidhi.netlify.app',
+  },
+  {
     title: 'Bake My Cake 🎂',
     desc: 'A React SPA for an online cake shop with category filtering, search, flip-card product gallery, shopping cart, checkout flow, and 54 products served via json-server REST API.',
     tech: ['React', 'Axios', 'Framer Motion', 'json-server', 'CSS'],

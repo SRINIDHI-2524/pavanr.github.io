@@ -13,13 +13,13 @@ export default function About() {
       </div>
       <div className="about-grid">
         <div className="about-card">
-          <div className="about-avatar">PR</div>
+          <img src="/avatar.jpg" alt="Pavan R Yadav" className="about-avatar-photo" />
           <div className="about-glow" />
         </div>
         <div className="about-text">
           <h3>Fresher Full Stack Developer</h3>
           <p>
-            I'm <strong>Pavan R</strong>, a passionate Full Stack Developer with a strong foundation in
+            I'm <strong>PAVAN R YADAV</strong>, a passionate Full Stack Developer with a strong foundation in
             Java, React.js, and modern web technologies. I love turning ideas into real-world
             applications with clean, efficient code.
           </p>

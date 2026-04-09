@@ -29,7 +29,7 @@ export default function Hero() {
       </div>
       <div className="hero-content">
         <p className="hero-greeting">👋 Hello, I'm</p>
-        <h1 className="hero-name">Pavan R</h1>
+        <h1 className="hero-name">PAVAN R YADAV</h1>
         <h2 className="hero-role">
           <span ref={textRef} className="typed-text"></span>
           <span className="cursor">|</span>
@@ -49,7 +49,7 @@ export default function Hero() {
       </div>
       <div className="hero-3d-card">
         <div className="avatar-ring">
-          <div className="avatar-inner">PR</div>
+          <img src="/avatar.jpg" alt="PAVAN R YADAV" className="avatar-photo" onError={(e)=>{e.target.style.display='none'; e.target.parentNode.innerHTML='<div class="avatar-fallback">PRY</div>'}} />
         </div>
         <div className="orbit orbit-1"><div className="orbit-dot" /></div>
         <div className="orbit orbit-2"><div className="orbit-dot" /></div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Save Avatar</title></head>
+<body style="font-family:sans-serif;padding:40px;background:#111;color:white;text-align:center">
+  <h2>Step 1: Drop your photo below</h2>
+  <div id="drop" style="border:2px dashed #9333ea;border-radius:20px;padding:60px;margin:20px auto;max-width:400px;cursor:pointer">
+    Drop photo here or click to select
+    <input type="file" id="file" accept="image/*" style="display:none">
+  </div>
+  <img id="preview" style="display:none;width:200px;height:200px;border-radius:50%;object-fit:cover;border:4px solid #2563eb">
+  <br><br>
+  <a id="dl" style="display:none;padding:12px 28px;background:linear-gradient(135deg,#2563eb,#9333ea);color:white;border-radius:50px;text-decoration:none;font-weight:700">
+    ⬇ Download as avatar.jpg
+  </a>
+  <p style="color:#94a3b8;margin-top:20px">After downloading, move <b>avatar.jpg</b> to <code>portfolio/public/</code></p>
+  <script>
+    const drop = document.getElementById('drop');
+    const file = document.getElementById('file');
+    const preview = document.getElementById('preview');
+    const dl = document.getElementById('dl');
+    drop.onclick = () => file.click();
+    drop.ondragover = e => e.preventDefault();
+    drop.ondrop = e => { e.preventDefault(); handle(e.dataTransfer.files[0]); };
+    file.onchange = () => handle(file.files[0]);
+    function handle(f) {
+      const reader = new FileReader();
+      reader.onload = e => {
+        preview.src = e.target.result;
+        preview.style.display = 'inline-block';
+        dl.href = e.target.result;
+        dl.download = 'avatar.jpg';
+        dl.style.display = 'inline-block';
+      };
+      reader.readAsDataURL(f);
+    }
+  </script>
+</body>
+</html>

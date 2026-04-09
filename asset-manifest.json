@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pavanr.github.io/static/css/main.3a2636f6.css",
-    "main.js": "/pavanr.github.io/static/js/main.31225c82.js",
+    "main.css": "/pavanr.github.io/static/css/main.a91ea66f.css",
+    "main.js": "/pavanr.github.io/static/js/main.57383b8f.js",
     "static/js/453.635f5f07.chunk.js": "/pavanr.github.io/static/js/453.635f5f07.chunk.js",
     "index.html": "/pavanr.github.io/index.html",
-    "main.3a2636f6.css.map": "/pavanr.github.io/static/css/main.3a2636f6.css.map",
-    "main.31225c82.js.map": "/pavanr.github.io/static/js/main.31225c82.js.map",
+    "main.a91ea66f.css.map": "/pavanr.github.io/static/css/main.a91ea66f.css.map",
+    "main.57383b8f.js.map": "/pavanr.github.io/static/js/main.57383b8f.js.map",
     "453.635f5f07.chunk.js.map": "/pavanr.github.io/static/js/453.635f5f07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a2636f6.css",
-    "static/js/main.31225c82.js"
+    "static/css/main.a91ea66f.css",
+    "static/js/main.57383b8f.js"
   ]
 }

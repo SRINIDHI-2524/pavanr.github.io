@@ -65,14 +65,49 @@ const projects = [
 ];
 
 export default function Projects() {
+  const featured = projects[0];
+  const rest = projects.slice(1);
+
   return (
     <section className="projects section" id="projects">
       <div className="section-title">
         <h2>My <span>Projects</span></h2>
         <div className="title-line" />
       </div>
+
+      {/* Featured Main Project */}
+      <div className="featured-card" style={{ '--color': featured.color }}>
+        <div className="featured-badge">⭐ Main Project</div>
+        <div className="featured-inner">
+          <div className="featured-left">
+            <span className="featured-icon">{featured.icon}</span>
+            <h2>{featured.title}</h2>
+            <p>{featured.desc}</p>
+            <div className="project-tech">
+              {featured.tech.map(t => <span key={t}>{t}</span>)}
+            </div>
+            <div className="featured-btns">
+              <a href={featured.github} target="_blank" rel="noreferrer" className="featured-github-btn">GitHub ↗</a>
+              <a href={featured.live} target="_blank" rel="noreferrer" className="featured-live-btn">Live Demo ↗</a>
+            </div>
+          </div>
+          <div className="featured-right">
+            <div className="featured-stats">
+              <div className="fstat"><span>🍔</span><strong>500+</strong><small>Food Items</small></div>
+              <div className="fstat"><span>🔐</span><strong>JWT</strong><small>Auth</small></div>
+              <div className="fstat"><span>💳</span><strong>Stripe</strong><small>Payments</small></div>
+              <div className="fstat"><span>🤖</span><strong>Gen AI</strong><small>Chatbot</small></div>
+              <div className="fstat"><span>📊</span><strong>Admin</strong><small>Dashboard</small></div>
+              <div className="fstat"><span>☕</span><strong>Java</strong><small>Spring Boot</small></div>
+            </div>
+          </div>
+        </div>
+        <div className="featured-glow" />
+      </div>
+
+      {/* Rest of Projects */}
       <div className="projects-grid">
-        {projects.map((p, i) => (
+        {rest.map((p, i) => (
           <div className="project-card" key={p.title} style={{ '--color': p.color, '--delay': `${i * 0.1}s` }}>
             <div className="project-top">
               <span className="project-icon">{p.icon}</span>

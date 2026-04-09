@@ -49,7 +49,7 @@ export default function Hero() {
       </div>
       <div className="hero-3d-card">
         <div className="avatar-ring">
-          <img src="/avatar.jpg" alt="PAVAN R YADAV" className="avatar-photo" onError={(e)=>{e.target.style.display='none'; e.target.parentNode.innerHTML='<div class="avatar-fallback">PRY</div>'}} />
+          <img src={process.env.PUBLIC_URL + '/avatar.jpg'} alt="PAVAN R YADAV" className="avatar-photo" onError={(e)=>{e.target.style.display='none'; e.target.parentNode.innerHTML='<div class="avatar-fallback">PRY</div>'}} />
         </div>
         <div className="orbit orbit-1"><div className="orbit-dot" /></div>
         <div className="orbit orbit-2"><div className="orbit-dot" /></div>

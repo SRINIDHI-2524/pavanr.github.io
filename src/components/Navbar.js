@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <a href="#hero" className="nav-logo-wrap">
-        <img src="/pry-logo.png" alt="PRY Logo" className="nav-logo-img" />
+        <img src={process.env.PUBLIC_URL + '/pry-logo.png'} alt="PRY Logo" className="nav-logo-img" />
       </a>
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
         {links.map(l => (
@@ -36,7 +36,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
           >{l}</a>
         ))}
-        <a href="/PAVANR-RESUME-5-04-2026.pdf" download className="nav-resume-btn">
+        <a href={process.env.PUBLIC_URL + '/PAVANR-RESUME-5-04-2026.pdf'} download className="nav-resume-btn">
           <span>Resume</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </a>

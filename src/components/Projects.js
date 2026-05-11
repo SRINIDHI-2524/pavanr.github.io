@@ -1,5 +1,23 @@
 const projects = [
   {
+    title: 'NeuralForge 🧠 — AI Dev Platform',
+    desc: 'World\'s first Autonomous AI Development Intelligence Platform built in Java. Generates full-stack features from plain English, predicts bugs before runtime, self-heals production errors, and features a 3D neural dashboard.',
+    tech: ['Java 21', 'Spring Boot 3', 'React', 'LangChain4j', 'GPT-4o', 'Docker', 'Kafka', 'Redis'],
+    color: '#6366f1',
+    icon: '🧠',
+    github: 'https://github.com/SRINIDHI-2524/NeuralForge',
+    live: 'http://localhost:3030',
+    featured: true,
+    stats: [
+      { icon: '🤖', value: 'GPT-4o', label: 'AI Engine' },
+      { icon: '⚡', value: 'Intent', label: 'To Feature' },
+      { icon: '🔮', value: 'Bug', label: 'Oracle' },
+      { icon: '🛡️', value: 'Self', label: 'Healing' },
+      { icon: '🧬', value: 'Vector', label: 'Memory' },
+      { icon: '☕', value: 'Java', label: 'Spring Boot' },
+    ]
+  },
+  {
     title: 'FAST Food Delivery App 🍔',
     desc: 'Swiggy/Zomato-like full-stack food delivery app — 500+ dishes, JWT auth, Stripe + UPI + COD payments, AI chatbot (GPT), real-time order tracking, coupon system, and admin dashboard with charts.',
     tech: ['React', 'Spring Boot', 'MySQL', 'Stripe', 'Gen AI', 'Tailwind'],
@@ -65,8 +83,9 @@ const projects = [
 ];
 
 export default function Projects() {
-  const featured = projects[0];
-  const rest = projects.slice(1);
+  const neuralforge = projects[0];
+  const featured = projects[1];
+  const rest = projects.slice(2);
 
   return (
     <section className="projects section" id="projects">
@@ -75,7 +94,33 @@ export default function Projects() {
         <div className="title-line" />
       </div>
 
-      {/* Featured Main Project */}
+      {/* NeuralForge — NEW FLAGSHIP */}
+      <div className="featured-card" style={{ '--color': neuralforge.color, marginBottom: '2rem' }}>
+        <div className="featured-badge" style={{ background: 'linear-gradient(135deg,#6366f1,#10b981)' }}>🧠 NEW — Gen AI Flagship</div>
+        <div className="featured-inner">
+          <div className="featured-left">
+            <span className="featured-icon">{neuralforge.icon}</span>
+            <h2>{neuralforge.title}</h2>
+            <p>{neuralforge.desc}</p>
+            <div className="project-tech">
+              {neuralforge.tech.map(t => <span key={t}>{t}</span>)}
+            </div>
+            <div className="featured-btns">
+              <a href={neuralforge.github} target="_blank" rel="noreferrer" className="featured-github-btn">GitHub ↗</a>
+              <a href={neuralforge.live} target="_blank" rel="noreferrer" className="featured-live-btn">Live Demo ↗</a>
+            </div>
+          </div>
+          <div className="featured-right">
+            <div className="featured-stats">
+              {neuralforge.stats.map(s => (
+                <div className="fstat" key={s.label}><span>{s.icon}</span><strong>{s.value}</strong><small>{s.label}</small></div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="featured-glow" />
+      </div>
+      {/* FAST Food — Featured */}
       <div className="featured-card" style={{ '--color': featured.color }}>
         <div className="featured-badge">⭐ Main Project</div>
         <div className="featured-inner">
